@@ -1,0 +1,5 @@
+# Requirements for the standalone encryption script
+# Only external dependencies needed
+
+boto3>=1.26.0
+cryptography>=3.4.0
