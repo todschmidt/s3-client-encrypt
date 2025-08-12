@@ -62,7 +62,7 @@ aws s3 cp "$new_file".enc s3://your-bucket/path/ \
 The script outputs metadata to stdout in the format required by `aws s3 cp`:
 
 ```
-x-amz-cek-alg=AES/GCM/NoPadding,x-amz-wrap-alg=kms,x-amz-tag-len=128,x-amz-unencrypted-content-length=99,x-amz-iv=ZoAoWY1Zi3hxTCMb,x-amz-matdesc={"kms_cmk_id": "arn:aws:kms:..."},x-amz-key-v2=AQIDAHgyyn5WqhqpzuFGWFNsV7s4CN5Ah0rk2v/VhqHU/t6gEgEaQY7vMQrW5Dkszy1tJuW2AAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMqCHVmTuGKQScsI+fAgEQgDvS/q+6WYWyUeQM+AZSrC0/3LM+Yyvby7va35yd2tN37VJyvYvYFqyPtbdiSqeRClrBntXJsgwWzKwe9w==
+x-amz-cek-alg=AES/GCM/NoPadding,x-amz-wrap-alg=kms,x-amz-tag-len=128,x-amz-unencrypted-content-length=99,x-amz-iv=YEP,x-amz-matdesc={"kms_cmk_id": "arn:aws:kms:..."},x-amz-key-v2=LOTSOFCHAARACTERS==
 ```
 
 ## Advantages over aws-encryption-cli
