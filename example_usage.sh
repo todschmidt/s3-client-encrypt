@@ -46,7 +46,7 @@ echo
 # Example of how you would use this with aws s3 cp
 echo "Example S3 upload command:"
 echo "aws s3 cp $INPUT_FILE.enc $BUCKET_NAME \\"
-echo "    --metadata \"$metadata\""
+echo "    --metadata file://$INPUT_FILE.json"
 echo
 
 # Verify the encrypted file was created

@@ -169,15 +169,15 @@ def main():
         print(f"Error: {error}", file=sys.stderr)
         sys.exit(1)
     
-    # Output the metadata in the format needed for aws s3 cp
-    metadata_string = format_metadata_for_s3_cp(metadata)
-    print(metadata_string)
+    # Write metadata to a JSON file with the same prefix as the input file
+    metadata_json_file = input_file + '.json'
+    with open(metadata_json_file, 'w', encoding='utf-8') as f:
+        json.dump(metadata, f, ensure_ascii=False, indent=2)
     
     # Also output some info to stderr for user feedback
     output_file = input_file + '.enc'
     print(f"File encrypted successfully: {output_file}", file=sys.stderr)
     print(f"Metadata: {len(metadata)} tags", file=sys.stderr)
-
 
 if __name__ == "__main__":
     main()

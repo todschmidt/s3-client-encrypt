@@ -1,0 +1,10 @@
+{
+  "x-amz-cek-alg": "AES/GCM/NoPadding",
+  "x-amz-wrap-alg": "kms",
+  "x-amz-tag-len": "128",
+  "x-amz-unencrypted-content-length": "99",
+  "x-amz-iv": "MJ7Yt65nZXao8YM4",
+  "x-amz-matdesc": "{\"kms_cmk_id\": \"arn:aws:kms:us-east-1:555550967375:key/fad1bc35-34c1-4632-80f5-49bf6f243fd9\"}",
+  "x-amz-key-v2": "AQIDAHgyyn5WqhqpzuFGWFNsV7s4CN5Ah0rk2v/VhqHU/t6gEgG9xTWDnVOqBuU6n28ntfvaAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMlf7Caloca/Ara+TiAgEQgDsbXHtUNSh6uXLAAbvYAZJYOlF9D9tXyeuDoVmufWGZDHQdSSw8ZZV/psEKqpWBmuIQK+ZxLouM1ZNxjw=="
+}
+

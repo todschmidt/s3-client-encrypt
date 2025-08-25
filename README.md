@@ -54,8 +54,7 @@ metadata=$(python encrypt_standalone.py "$new_file" "$KMS_KEY_ARN")
 
 # Upload to S3 with metadata
 aws s3 cp "$new_file".enc s3://your-bucket/path/ \
-    --metadata "$metadata"
-```
+    --metadata="$metadata
 
 ## Output Format
 
